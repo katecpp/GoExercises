@@ -39,5 +39,5 @@ func main() {
 	randomArray := getRandomArray()
 	fmt.Println(randomArray)
 	minValue := findMinimum(randomArray)
-	fmt.Println("Minumim: ", minValue)
+	fmt.Println("Minimum: ", minValue)
 }

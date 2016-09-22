@@ -1,7 +1,6 @@
 // Task 1.
-// Get two random numbers and print them.
-// Print the sum of these numbers with the use of function
-// that adds two integers.
+// Write a function 'add' that sums two integers.
+// Print a sum of two randomly chosen integers from range 0-100.
 
 package main
 
