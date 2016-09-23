@@ -11,12 +11,6 @@ import (
   "strings"
 )
 
-func invalidArgsMsg() {
-  fmt.Println("Invalid input parameters.")
-  fmt.Println("Usage: 10_ceasar.exe <string to decode> <offset>")
-  return
-}
-
 func cipher(s string, offset int) string {
   const alphabetLen int = 26
   s = strings.ToLower(s)
