@@ -6,6 +6,17 @@ package main
 
 import "fmt"
 
+func readInt() int {
+	var i int
+	for _, err := fmt.Scanln(&i); err != nil; _, err = fmt.Scanln(&i) {
+		// If int read fails, read as string and forget
+		var discard string
+		fmt.Scanln(&discard)
+		fmt.Println("This is not a valid number! Try again...")
+	}
+	return i
+}
+
 func fib(x uint) uint {
 	if x == 0 {
 		return 0
@@ -17,9 +28,7 @@ func fib(x uint) uint {
 
 func main() {
 	fmt.Print("How many fibonacci numbers you want to print? ")
-	var length int
-	fmt.Scan(&length)
-
+	length := readInt()
 	for i := 0; i < length; i++ {
 		fmt.Print(fib(uint(i)), " ")
 	}
