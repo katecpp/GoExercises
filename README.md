@@ -57,10 +57,10 @@ Minimum:  5
 ## 6. Estimate Pi with Monte-Carlo
 ### Task
 Implement the estimation of PI value with the use of Monte-Carlo method.  
-The number of samples used in the calculation should be passed as command line argument
+The number of samples used in the calculation should be passed as command line argument.
 ### Example output
-$ 06_pi_monte_carlo.exe 10000
-Estimate Pi with  10000  samples.
+$ 06_pi_monte_carlo.exe 10000  
+Estimate Pi with  10000  samples.  
 Result:  3.1432
 
 
